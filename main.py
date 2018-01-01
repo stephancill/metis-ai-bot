@@ -56,6 +56,7 @@ class Main:
 
 	def run(self):
 		self.twitter.listen(self.handle_tweet)
+		Logger.log("Bot running...")
 
 
 if __name__ == "__main__":
