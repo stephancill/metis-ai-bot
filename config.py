@@ -1,5 +1,5 @@
 class Config:
-	follow_ids = ["944717267304108032","914663684928139264"] # @mcafee2cash, @metis_ai
+	follow_ids = ["914663684928139264"] # @metis_ai
 
 	# Spend a fraction of BTC balance per signal (default 10%)
 	btc_spend_multiplier = 0.1

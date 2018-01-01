@@ -2,7 +2,7 @@
 from bittrex.bittrex import Bittrex as BittrexUtils
 from config import Config
 import json
-import logging
+from logger import Logger
 import os
 import requests
 import time
@@ -72,14 +72,13 @@ class Bittrex:
 		ask = self.bittrex.get_marketsummary(pair)["result"][0]["Ask"]
 		rate = round(ask * Config.buy_multiplier, 8)
 		quantity = round(total_price / rate, 8)
-		print("Buy order", (pair, quantity, "{:.8f}".format(rate)))
-		# Create order TODO
-		# response = self.bittrex.buy_limit(pair, quantity, rate)
-		# if response["success"]:
-		# 	return response["result"]["uuid"], rate
-		# else:
-		# 	raise Exception(f'Bittrex - market_buy: {response["message"]}')
-		return "149b6175-efe9-4d18-8b4b-73a0ea0299b8", rate
+		Logger.log("Buy order", (pair, quantity, "{:.8f}".format(rate)))
+		# Create order 
+		response = self.bittrex.buy_limit(pair, quantity, rate)
+		if response["success"]:
+			return response["result"]["uuid"], rate
+		else:
+			raise Exception(f'Bittrex - market_buy: {response["message"]}')
 
 	def limit_sell_by_order(self, uuid, rate, multiplier=1):
 		"""Create a sell order for the total quantity of a filled buy order
@@ -89,17 +88,16 @@ class Bittrex:
 		Return order uuid"""
 		order = self.bittrex.get_order(uuid)["result"]
 		pair = order["Exchange"]
-		quantity = order["Quantity"]
-		print("Sell order", (pair, quantity*multiplier, "{:.8f}".format(rate)))
-		# Create order TODO
-		# response = self.bittrex.sell_limit(pair, quantity*multiplier, rate)
-		# if response["success"]:
-		# 	return response["result"]["uuid"]
-		# else:
-		# 	raise Exception(f'Bittrex - limit_sell_by_order: {response["message"]}')
-		return "149b6175-efe9-4d18-8b4b-73a0ea0299b8"
+		quantity = order["Quantity"]*multiplier
+		Logger.log("Sell order", (pair, quantity, "{:.8f}".format(rate)))
+		# Create order
+		response = self.bittrex.sell_limit(pair, quantity, rate)
+		if response["success"]:
+			return response["result"]["uuid"]
+		else:
+			raise Exception(f'Bittrex - limit_sell_by_order: {response["message"]}')
 
-	def wait_for_order(self, uuid, max_retries=3):
+	def wait_for_order(self, uuid, max_retries=10):
 		"""Wait for order to complete with timeout
 		Return is_close: bool"""
 		order = self.bittrex.get_order(uuid)["result"]
@@ -119,8 +117,7 @@ class Bittrex:
 
 	def cancel_order(self, uuid):
 		"""Cancel order by uuid"""
-		return True
-		# TODO return self.bittrex.cancel(uuid)["success"]
+		return self.bittrex.cancel(uuid)["success"]
 
 	def get_order_history(self, pair=None):
 		"""Return closed orders"""

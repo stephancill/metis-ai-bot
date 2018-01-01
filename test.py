@@ -2,6 +2,10 @@ from main import Main
 from twitter import Twitter
 import json
 
+"""
+DISCLAIMER - BITTREX TESTS WILL MAKE REAL TRANSACTIONS
+"""
+
 def test_extract_symbol_price():
 	with open("sample-tweets.json") as f:
 		sample_tweets = json.load(f)
@@ -25,4 +29,4 @@ def test_tweet_handler():
 	main.handle_tweet(sample_tweets["price"]["text"])
 
 if __name__ == "__main__":
-	test_tweet_handler()
+	# test_tweet_handler()

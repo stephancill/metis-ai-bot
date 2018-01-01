@@ -18,7 +18,7 @@ class Logger:
 		chat_ids = ["@tradingbotlogs"]
 
 		for chat_id in chat_ids:
-			endpoint = f'https://api.telegram.org/bot{BOT_TOKEN}/sendMessage?chat_id={chat_id}&text={str(*msg)}'
+			endpoint = f'https://api.telegram.org/bot{BOT_TOKEN}/sendMessage?chat_id={chat_id}&text={str(msg)}'
 			print(requests.get(endpoint))
 
 if __name__ == "__main__":
