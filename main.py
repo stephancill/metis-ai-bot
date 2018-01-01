@@ -51,6 +51,7 @@ class Main:
 				Logger.log("Market buy took too long... canceling")
 				self.bittrex.cancel_order(uuid)
 		except Exception as e:
+			Logger.log(e)
 			traceback.print_tb(e.__traceback__)
 
 	def run(self):
