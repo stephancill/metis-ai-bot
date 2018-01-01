@@ -1,0 +1,1 @@
+worker: pipenv run "python -m textblob.download_corpora" && pipenv run python main.py
