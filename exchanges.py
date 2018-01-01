@@ -35,18 +35,24 @@ class Bittrex:
 		balance_symbols = [x["Currency"] for x in balances]
 		
 		symbol_market = {}
+		symbol_market["USDT"] = [x for x in markets if x["MarketName"] == "USDT-BTC"][0]
 		for market in markets:
 			if "BTC-" in market["MarketName"]:
 				symbol = market["MarketName"].split("-")[1]
 				if symbol in balance_symbols:
 					symbol_market[symbol] = market
-		
+
 		for balance in balances:
 			symbol = balance["Currency"]
-			if symbol != "BTC":
-				total += symbol_market[symbol]["Bid"] * balance["Balance"]
-			else:
+			if symbol not in symbol_market:
+				continue
+			
+			if symbol == "BTC":
 				total += balance["Balance"]
+			elif symbol == "USDT":
+				total += balance["Balance"] / symbol_market[symbol]["Bid"]
+			else:
+				total += symbol_market[symbol]["Bid"] * balance["Balance"]
 
 		return total
 
@@ -149,3 +155,4 @@ class Bittrex:
 
 if __name__ == "__main__":
 	bittrex = Bittrex()
+	print(bittrex.get_portfolio_value())
