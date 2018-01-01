@@ -1,0 +1,687 @@
+{
+    "price": {
+        "created_at": "Sun Dec 31 16:22:45 +0000 2017",
+        "id": 947503302929010700,
+        "id_str": "947503302929010688",
+        "text": "$BCY is looking strong! Get your seat beltsfastened!\n\nPrice: 0.00006245\n\n#BTC $Alts #Crypto $Crypto #AltCoins #ETH $ETH $BTC",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 944717267304108000,
+            "id_str": "944717267304108032",
+            "name": "mcafee2cash",
+            "screen_name": "mcafee2cash",
+            "location": null,
+            "url": null,
+            "description": null,
+            "translator_type": "none",
+            "protected": false,
+            "verified": false,
+            "followers_count": 2,
+            "friends_count": 0,
+            "listed_count": 0,
+            "favourites_count": 1,
+            "statuses_count": 53,
+            "created_at": "Sat Dec 23 23:52:03 +0000 2017",
+            "utc_offset": null,
+            "time_zone": null,
+            "geo_enabled": false,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "profile_background_color": "F5F8FA",
+            "profile_background_image_url": "",
+            "profile_background_image_url_https": "",
+            "profile_background_tile": false,
+            "profile_link_color": "1DA1F2",
+            "profile_sidebar_border_color": "C0DEED",
+            "profile_sidebar_fill_color": "DDEEF6",
+            "profile_text_color": "333333",
+            "profile_use_background_image": true,
+            "profile_image_url": "http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+            "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+            "default_profile": true,
+            "default_profile_image": false,
+            "following": null,
+            "follow_request_sent": null,
+            "notifications": null
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "quote_count": 0,
+        "reply_count": 0,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "entities": {
+            "hashtags": [
+                {
+                    "text": "BTC",
+                    "indices": [
+                        74,
+                        78
+                    ]
+                },
+                {
+                    "text": "Crypto",
+                    "indices": [
+                        85,
+                        92
+                    ]
+                },
+                {
+                    "text": "AltCoins",
+                    "indices": [
+                        101,
+                        110
+                    ]
+                },
+                {
+                    "text": "ETH",
+                    "indices": [
+                        111,
+                        115
+                    ]
+                }
+            ],
+            "urls": [],
+            "user_mentions": [],
+            "symbols": [
+                {
+                    "text": "BCY",
+                    "indices": [
+                        0,
+                        4
+                    ]
+                },
+                {
+                    "text": "Alts",
+                    "indices": [
+                        79,
+                        84
+                    ]
+                },
+                {
+                    "text": "Crypto",
+                    "indices": [
+                        93,
+                        100
+                    ]
+                },
+                {
+                    "text": "ETH",
+                    "indices": [
+                        116,
+                        120
+                    ]
+                },
+                {
+                    "text": "BTC",
+                    "indices": [
+                        121,
+                        125
+                    ]
+                }
+            ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "filter_level": "low",
+        "lang": "en",
+        "timestamp_ms": "1514737365835"
+    },
+    "update": {
+        "created_at": "Sun Dec 31 13:35:51 +0000 2017",
+        "id": 947461299117658100,
+        "id_str": "947461299117658112",
+        "text": "RT @Metis_AI: UPDATE: $CANN up 35% since the call!\nNow: 0.00003376\n\nhttps://t.co/6vWJQdvyBS\n$BTC #BTC #AltCoins $ETH #ETH",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 944717267304108000,
+            "id_str": "944717267304108032",
+            "name": "mcafee2cash",
+            "screen_name": "mcafee2cash",
+            "location": null,
+            "url": null,
+            "description": null,
+            "translator_type": "none",
+            "protected": false,
+            "verified": false,
+            "followers_count": 2,
+            "friends_count": 0,
+            "listed_count": 0,
+            "favourites_count": 1,
+            "statuses_count": 48,
+            "created_at": "Sat Dec 23 23:52:03 +0000 2017",
+            "utc_offset": null,
+            "time_zone": null,
+            "geo_enabled": false,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "profile_background_color": "F5F8FA",
+            "profile_background_image_url": "",
+            "profile_background_image_url_https": "",
+            "profile_background_tile": false,
+            "profile_link_color": "1DA1F2",
+            "profile_sidebar_border_color": "C0DEED",
+            "profile_sidebar_fill_color": "DDEEF6",
+            "profile_text_color": "333333",
+            "profile_use_background_image": true,
+            "profile_image_url": "http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+            "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+            "default_profile": true,
+            "default_profile_image": false,
+            "following": null,
+            "follow_request_sent": null,
+            "notifications": null
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "retweeted_status": {
+            "created_at": "Sun Dec 31 08:32:43 +0000 2017",
+            "id": 947385014605541400,
+            "id_str": "947385014605541376",
+            "text": "UPDATE: $CANN up 35% since the call!\nNow: 0.00003376\n\nhttps://t.co/6vWJQdvyBS\n$BTC #BTC #AltCoins $ETH #ETH",
+            "source": "<a href=\"https://krishpuri.com\" rel=\"nofollow\">CoinGenieAI</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 914663684928139300,
+                "id_str": "914663684928139264",
+                "name": "MetisAI Signals",
+                "screen_name": "Metis_AI",
+                "location": "The Moon",
+                "url": "https://twitter.com/krishpuri",
+                "description": "Hi, I'm an AI and I use machine learning to predict coins that are about to pump soon. Follow @krishpuri for more bots, updates, accurate TA charts, and news!",
+                "translator_type": "none",
+                "protected": false,
+                "verified": false,
+                "followers_count": 2752,
+                "friends_count": 1,
+                "listed_count": 25,
+                "favourites_count": 19,
+                "statuses_count": 518,
+                "created_at": "Mon Oct02 01:29:50 +0000 2017",
+                "utc_offset": -28800,
+                "time_zone": "Pacific Time (US & Canada)",
+                "geo_enabled": false,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "profile_background_color": "000000",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_link_color": "E81C4F",
+                "profile_sidebar_border_color": "000000",
+                "profile_sidebar_fill_color": "000000",
+                "profile_text_color": "000000",
+                "profile_use_background_image": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/914665927223808000/tXm3ytJl_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/914665927223808000/tXm3ytJl_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/914663684928139264/1506909490",
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "quoted_status_id": 947288143128137700,
+            "quoted_status_id_str": "947288143128137728",
+            "quoted_status": {
+                "created_at": "Sun Dec 31 02:07:47 +0000 2017",
+                "id": 947288143128137700,
+                "id_str": "947288143128137728",
+                "text": "$CANN is going for it! Get your seat belts fastened!\n\nPrice: 0.00002500\n\n$Crypto $ETH #BTC #AltCoins $Alts #ETH #Crypto $BTC",
+                "source": "<a href=\"https://krishpuri.com\" rel=\"nofollow\">CoinGenieAI</a>",
+                "truncated": false,
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 914663684928139300,
+                    "id_str": "914663684928139264",
+                    "name": "Metis AI Signals",
+                    "screen_name": "Metis_AI",
+                    "location": "The Moon",
+                    "url": "https://twitter.com/krishpuri",
+                    "description": "Hi, I'm an AI and I use machine learning to predict coins that are about to pump soon. Follow @krishpuri for more bots, updates, accurate TA charts, and news!",
+                    "translator_type": "none",
+                    "protected": false,
+                    "verified": false,
+                    "followers_count": 2752,
+                    "friends_count": 1,
+                    "listed_count": 25,
+                    "favourites_count": 19,
+                    "statuses_count": 518,
+                    "created_at": "Mon Oct 02 01:29:50 +0000 2017",
+                    "utc_offset": -28800,
+                    "time_zone": "Pacific Time (US & Canada)",
+                    "geo_enabled": false,
+                    "lang": "en",
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "profile_background_color": "000000",
+                    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                    "profile_background_tile": false,
+                    "profile_link_color": "E81C4F",
+                    "profile_sidebar_border_color": "000000",
+                    "profile_sidebar_fill_color": "000000",
+                    "profile_text_color": "000000",
+                    "profile_use_background_image": false,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/914665927223808000/tXm3ytJl_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/914665927223808000/tXm3ytJl_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/914663684928139264/1506909490",
+                    "default_profile": false,
+                    "default_profile_image": false,
+                    "following": null,
+                    "follow_request_sent": null,
+                    "notifications": null
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "quote_count": 5,
+                "reply_count": 2,
+                "retweet_count": 2,
+                "favorite_count": 4,
+                "entities": {
+                    "hashtags": [
+                        {
+                            "text": "BTC",
+                            "indices": [
+                                86,
+                                90
+                            ]
+                        },
+                        {
+                            "text": "AltCoins",
+                            "indices": [
+                                91,
+                                100
+                            ]
+                        },
+                        {
+                            "text": "ETH",
+                            "indices": [
+                                107,
+                                111
+                            ]
+                        },
+                        {
+                            "text": "Crypto",
+                            "indices": [
+                                112,
+                                119
+                            ]
+                        }
+                    ],
+                    "urls": [],
+                    "user_mentions": [],
+                    "symbols": [
+                        {
+                            "text": "CANN",
+                            "indices": [
+                                0,
+                                5
+                            ]
+                        },
+                        {
+                            "text": "Crypto",
+                            "indices": [
+                                73,
+                                80
+                            ]
+                        },
+                        {
+                            "text": "ETH",
+                            "indices": [
+                                81,
+                                85
+                            ]
+                        },
+                        {
+                            "text": "Alts",
+                            "indices": [
+                                101,
+                                106
+                            ]
+                        },
+                        {
+                            "text": "BTC",
+                            "indices": [
+                                120,
+                                124
+                            ]
+                        }
+                    ]
+                },
+                "favorited": false,
+                "retweeted": false,
+                "filter_level": "low",
+                "lang": "en"
+            },
+            "is_quote_status": true,
+            "quote_count": 0,
+            "reply_count": 0,
+            "retweet_count": 1,
+            "favorite_count": 3,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "BTC",
+                        "indices": [
+                            83,
+                            87
+                        ]
+                    },
+                    {
+                        "text": "AltCoins",
+                        "indices": [
+                            88,
+                            97
+                        ]
+                    },
+                    {
+                        "text": "ETH",
+                        "indices": [
+                            103,
+                            107
+                        ]
+                    }
+                ],
+                "urls": [
+                    {
+                        "url": "https://t.co/6vWJQdvyBS",
+                        "expanded_url": "https://twitter.com/Metis_AI/status/947288143128137728",
+                        "display_url": "twitter.com/Metis_AI/statu…",
+                        "indices": [
+                            54,
+                            77
+                        ]
+                    }
+                ],
+                "user_mentions": [],
+                "symbols": [
+                    {
+                        "text": "CANN",
+                        "indices": [
+                            8,
+                            13
+                        ]
+                    },
+                    {
+                        "text": "BTC",
+                        "indices": [
+                            78,
+                            82
+                        ]
+                    },
+                    {
+                        "text": "ETH",
+                        "indices": [
+                            98,
+                            102
+                        ]
+                    }
+                ]
+            },
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "filter_level": "low",
+            "lang": "en"
+        },
+        "quoted_status_id": 947288143128137700,
+        "quoted_status_id_str": "947288143128137728",
+        "quoted_status": {
+            "created_at": "Sun Dec 31 02:07:47 +0000 2017",
+            "id": 947288143128137700,
+            "id_str": "947288143128137728",
+            "text": "$CANN is going for it! Get your seat belts fastened!\n\nPrice: 0.00002500\n\n$Crypto $ETH #BTC #AltCoins $Alts #ETH #Crypto $BTC",
+            "source": "<a href=\"https://krishpuri.com\" rel=\"nofollow\">CoinGenieAI</a>",
+            "truncated": false,
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 914663684928139300,
+                "id_str": "914663684928139264",
+                "name": "Metis AI Signals",
+                "screen_name": "Metis_AI",
+                "location": "The Moon",
+                "url": "https://twitter.com/krishpuri",
+                "description": "Hi, I'm an AI and I use machine learning to predict coins that are about to pump soon. Follow @krishpuri for more bots, updates, accurate TA charts, and news!",
+                "translator_type": "none",
+                "protected": false,
+                "verified": false,
+                "followers_count": 2752,
+                "friends_count": 1,
+                "listed_count": 25,
+                "favourites_count": 19,
+                "statuses_count": 518,
+                "created_at": "Mon Oct 02 01:29:50 +00002017",
+                "utc_offset": -28800,
+                "time_zone": "Pacific Time (US & Canada)",
+                "geo_enabled": false,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "profile_background_color": "000000",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_link_color": "E81C4F",
+                "profile_sidebar_border_color": "000000",
+                "profile_sidebar_fill_color": "000000",
+                "profile_text_color": "000000",
+                "profile_use_background_image": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/914665927223808000/tXm3ytJl_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/914665927223808000/tXm3ytJl_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/914663684928139264/1506909490",
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "quote_count": 5,
+            "reply_count": 2,
+            "retweet_count": 2,
+            "favorite_count": 4,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "BTC",
+                        "indices": [
+                            86,
+                            90
+                        ]
+                    },
+                    {
+                        "text": "AltCoins",
+                        "indices": [
+                            91,
+                            100
+                        ]
+                    },
+                    {
+                        "text": "ETH",
+                        "indices": [
+                            107,
+                            111
+                        ]
+                    },
+                    {
+                        "text": "Crypto",
+                        "indices": [
+                            112,
+                            119
+                        ]
+                    }
+                ],
+                "urls": [],
+                "user_mentions": [],
+                "symbols": [
+                    {
+                        "text": "CANN",
+                        "indices": [
+                            0,
+                            5
+                        ]
+                    },
+                    {
+                        "text": "Crypto",
+                        "indices": [
+                            73,
+                            80
+                        ]
+                    },
+                    {
+                        "text": "ETH",
+                        "indices": [
+                            81,
+                            85
+                        ]
+                    },
+                    {
+                        "text": "Alts",
+                        "indices": [
+                            101,
+                            106
+                        ]
+                    },
+                    {
+                        "text": "BTC",
+                        "indices": [
+                            120,
+                            124
+                        ]
+                    }
+                ]
+            },
+            "favorited": false,
+            "retweeted": false,
+            "filter_level": "low",
+            "lang": "en"
+        },
+        "is_quote_status": true,
+        "quote_count": 0,
+        "reply_count": 0,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "entities": {
+            "hashtags": [
+                {
+                    "text": "BTC",
+                    "indices": [
+                        97,
+                        101
+                    ]
+                },
+                {
+                    "text": "AltCoins",
+                    "indices": [
+                        102,
+                        111
+                    ]
+                },
+                {
+                    "text": "ETH",
+                    "indices": [
+                        117,
+                        121
+                    ]
+                }
+            ],
+            "urls": [
+                {
+                    "url": "https://t.co/6vWJQdvyBS",
+                    "expanded_url": "https://twitter.com/Metis_AI/status/947288143128137728",
+                    "display_url": "twitter.com/Metis_AI/statu…",
+                    "indices": [
+                        68,
+                        91
+                    ]
+                }
+            ],
+            "user_mentions": [
+                {
+                    "screen_name": "Metis_AI",
+                    "name": "Metis AI Signals",
+                    "id": 914663684928139300,
+                    "id_str": "914663684928139264",
+                    "indices": [
+                        3,
+                        12
+                    ]
+                }
+            ],
+            "symbols": [
+                {
+                    "text": "CANN",
+                    "indices": [
+                        22,
+                        27
+                    ]
+                },
+                {
+                    "text": "BTC",
+                    "indices": [
+                        92,
+                        96
+                    ]
+                },
+                {
+                    "text": "ETH",
+                    "indices": [
+                        112,
+                        116
+                    ]
+                }
+            ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "filter_level": "low",
+        "lang": "en",
+        "timestamp_ms": "1514727351346"
+    }
+}
