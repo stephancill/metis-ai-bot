@@ -3,15 +3,20 @@ from bittrex.bittrex import Bittrex as BittrexUtils
 from config import Config
 import json
 import logging
+import os
 import requests
 import time
 
 class Bittrex:
 	def __init__(self):
-		with open("secrets.json") as f:
-			keys = json.load(f)
-			BITTREX_KEY = keys["BITTREX_KEY"]
-			BITTREX_SECRET = keys["BITTREX_SECRET"]
+		try:
+			with open("secrets.json") as f:
+				keys = json.load(f)
+				BITTREX_KEY = keys["BITTREX_KEY"]
+				BITTREX_SECRET = keys["BITTREX_SECRET"]
+		except:
+			BITTREX_KEY = os.environ["BITTREX_KEY"]
+			BITTREX_SECRET = os.environ["BITTREX_SECRET"]
 		self.bittrex = BittrexUtils(BITTREX_KEY, BITTREX_SECRET)
 		self.symbols = None
 		self.market_summaries = None

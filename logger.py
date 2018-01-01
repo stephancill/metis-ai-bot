@@ -1,4 +1,5 @@
 import json
+import os
 import requests
 
 class Logger:
@@ -7,9 +8,12 @@ class Logger:
 		Logger.broadcast(*msg)
 
 	def broadcast(*msg):
-		with open("secrets.json") as f:
-			keys = json.load(f) 
-			BOT_TOKEN = keys["TELEGRAM_BOT_TOKEN"]
+		try:
+			with open("secrets.json") as f:
+				keys = json.load(f) 
+				BOT_TOKEN = keys["TELEGRAM_BOT_TOKEN"]
+		except:
+			BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 
 		chat_ids = ["@tradingbotlogs"]
 

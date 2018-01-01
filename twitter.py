@@ -1,4 +1,5 @@
 from config import Config
+import os
 import requests
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
@@ -20,12 +21,18 @@ class TwitterListener(StreamListener):
 		
 class Twitter:
 	def __init__(self):
-		with open("secrets.json") as f:
-			keys = json.load(f) 
-			CONSUMER_KEY = keys["TWITTER_CONSUMER_KEY"]
-			CONSUMER_SECRET = keys["TWITTER_CONSUMER_SECRET"]
-			ACCESS_KEY = keys["TWITTER_ACCESS_KEY"]
-			ACCESS_SECRET = keys["TWITTER_ACCESS_SECRET"]
+		try:
+			with open("secrets.json") as f:
+				keys = json.load(f) 
+				CONSUMER_KEY = keys["TWITTER_CONSUMER_KEY"]
+				CONSUMER_SECRET = keys["TWITTER_CONSUMER_SECRET"]
+				ACCESS_KEY = keys["TWITTER_ACCESS_KEY"]
+				ACCESS_SECRET = keys["TWITTER_ACCESS_SECRET"]
+		except:
+			CONSUMER_KEY = os.environ["TWITTER_CONSUMER_KEY"]
+			CONSUMER_SECRET = os.environ["TWITTER_CONSUMER_SECRET"]
+			ACCESS_KEY = os.environ["TWITTER_ACCESS_KEY"]
+			ACCESS_SECRET = os.environ["TWITTER_ACCESS_SECRET"]
 		
 		self.auth = OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 		self.auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
