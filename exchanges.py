@@ -56,7 +56,7 @@ class Bittrex:
 
 		return total
 
-	def get_balance(self, symbol):
+	def get_available_balance(self, symbol):
 		response = self.bittrex.get_balance(symbol)
 		if response["success"]:
 			return response["result"]["Available"]
@@ -152,4 +152,4 @@ class Bittrex:
 
 if __name__ == "__main__":
 	bittrex = Bittrex()
-	print(bittrex.get_portfolio_value())
+	print(bittrex.get_available_balance("BTC"))
