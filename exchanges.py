@@ -71,7 +71,7 @@ class Bittrex:
 		# Get asking price multiplied by Config.buy_multiplier
 		ask = self.bittrex.get_marketsummary(pair)["result"][0]["Ask"]
 		rate = round(ask * Config.buy_multiplier, 8)
-		quantity = round(total_price / rate, 8)
+		quantity = round(total_price / rate - 5 * 10**-9, 8) # Round down
 		Logger.log("Buy order", (pair, quantity, "{:.8f}".format(rate)))
 		# Create order 
 		response = self.bittrex.buy_limit(pair, quantity, rate)
