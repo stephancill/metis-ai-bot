@@ -66,8 +66,8 @@ class Bittrex:
 	def market_buy(self, pair, total_price):
 		"""Buy a a specified value in the base currency's worth at the current asking price +2%
 		pair: market pair
-		total_price: 
-		Return order uuid"""
+		total_price: btc to spend
+		Return order uuid, rate"""
 		# Get asking price multiplied by Config.buy_multiplier
 		ask = self.bittrex.get_marketsummary(pair)["result"][0]["Ask"]
 		rate = round(ask * Config.buy_multiplier, 8)

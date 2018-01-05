@@ -16,7 +16,7 @@ class Main:
 
 	def extract_symbol_price(self, text):
 		try:
-			if "Price:" in text and "$" in text:
+			if "Price:" in text and "$" in text and "best price:" not in text.lower():
 				symbol = TextBlob(text.split("$")[1]).words[0]
 				price = float([x[0] for x in TextBlob(text.split("Price: ")[1]).tags if x[1] == "CD"][0])
 				return symbol, price
