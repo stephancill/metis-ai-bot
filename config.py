@@ -22,3 +22,9 @@ class Config:
 	except:
 		buy_multiplier = 1.02
 
+	# Buy price multiplier - price ahead of pump (default 1.02)
+	try:
+		telegram_log_channels = os.environ["telegram_log_channels"].split()
+	except:
+		telegram_log_channels = []
+

@@ -1,3 +1,4 @@
+from config import Config
 import json
 import os
 import requests
@@ -15,7 +16,7 @@ class Logger:
 		except:
 			BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 
-		chat_ids = ["@metisaibotlogs"]
+		chat_ids = ["@" + x for x in Config.telegram_log_channels]
 
 		for chat_id in chat_ids:
 			endpoint = f'https://api.telegram.org/bot{BOT_TOKEN}/sendMessage?chat_id={chat_id}&text={" ".join([str(x) for x in msg])}'
