@@ -36,7 +36,7 @@ class Main:
 		try:
 			# Initiate market buy
 			pair = f'BTC-{symbol}'
-			amount = round(self.bittrex.get_portfolio_value() * Config.btc_spend_multiplier, 8)
+			amount = Config.btc_spend
 			Logger.log(f'Spending {"{:.8f}".format(amount)} BTC')
 			uuid, buy_price = self.bittrex.market_buy(pair, amount)
 			# Wait for the order to close
