@@ -26,5 +26,5 @@ class Config:
 	try:
 		telegram_log_channels = os.environ["telegram_log_channels"].split()
 	except:
-		telegram_log_channels = []
+		telegram_log_channels = ["lotmtestchannel"]
 

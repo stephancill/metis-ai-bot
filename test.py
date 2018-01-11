@@ -29,4 +29,4 @@ def test_tweet_handler():
 	main.handle_tweet(sample_tweets["price"]["text"])
 
 if __name__ == "__main__":
-	# test_tweet_handler()
+	test_tweet_handler()

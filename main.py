@@ -13,24 +13,26 @@ class Main:
 		self.twitter = Twitter()
 		self.bittrex = Bittrex()
 		self.symbols = self.bittrex.get_markets()
+		print(self.symbols)
 
 	def extract_symbol_price(self, text):
 		try:
-			if "Price:" in text and "$" in text and "best price:" not in text.lower():
+			if "Price:" in text and "$" in text and "best price:" not in text.lower() and "now: " not in text.lower():
 				symbol = TextBlob(text.split("$")[1]).words[0]
-				price = float([x[0] for x in TextBlob(text.split("Price: ")[1]).tags if x[1] == "CD"][0])
-				return symbol, price
+				# price = float([x[0] for x in TextBlob(text.split("Price: ")[1]).tags if x[1] == "CD"][0])
+				return symbol
 			else:
-				return None, None
+				return None
 		except Exception as e:
 			Logger.log(e)
 
 	def handle_tweet(self, text):
-		symbol, price = self.extract_symbol_price(text)
-		if symbol and price:
-			Logger.log(f'New signal: {symbol, "{:.8f}".format(price)}')
+		symbol = self.extract_symbol_price(text)
+		if symbol:
+			Logger.log(f'New signal: {symbol}')
 			if symbol in self.symbols:
-				self.buy_and_sell(symbol)
+				# self.buy_and_sell(symbol)
+				pass
 		
 	def buy_and_sell(self, symbol):
 		try:

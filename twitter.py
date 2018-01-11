@@ -1,4 +1,5 @@
 from config import Config
+from logger import Logger
 import os
 import requests
 from tweepy.streaming import StreamListener
@@ -14,7 +15,8 @@ class TwitterListener(StreamListener):
 		tweet_json = json.loads(data)
 		try: 
 			if tweet_json["user"]["id_str"] in Config.follow_ids:
-				# print(data)
+				link = f'https://twitter.com/{screen_name}/status/{id}'
+				Logger.log(link)
 				self.callback(tweet_json["text"])
 		except:
 			pass
