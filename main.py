@@ -13,7 +13,6 @@ class Main:
 		self.twitter = Twitter()
 		self.bittrex = Bittrex()
 		self.symbols = self.bittrex.get_markets()
-		print(self.symbols)
 
 	def extract_symbol_price(self, text):
 		try:
