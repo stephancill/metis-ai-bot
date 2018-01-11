@@ -31,8 +31,7 @@ class Main:
 		if symbol:
 			Logger.log(f'New signal: {symbol}')
 			if symbol in self.symbols:
-				# self.buy_and_sell(symbol)
-				pass
+				self.buy_and_sell(symbol)
 		
 	def buy_and_sell(self, symbol):
 		try:

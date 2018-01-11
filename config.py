@@ -7,7 +7,7 @@ class Config:
 	try:
 		btc_spend = float(os.environ["btc_spend"])
 	except:
-		btc_spend = 0.1
+		btc_spend = 0.0
 	
 	# Price to sell at 
 	# buy * sell_multiplier = sell price (default 1.1)
