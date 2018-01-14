@@ -16,7 +16,7 @@ class Main:
 
 	def extract_symbol_price(self, text):
 		try:
-			if "Price:" in text and "$" in text and "best price:" not in text.lower() and "now: " not in text.lower():
+			if "Price:" in text and "$" in text and "best price:" not in text.lower() and "update: " not in text.lower():
 				symbol = TextBlob(text.split("$")[1]).words[0]
 				# price = float([x[0] for x in TextBlob(text.split("Price: ")[1]).tags if x[1] == "CD"][0])
 				return symbol
@@ -67,7 +67,7 @@ if __name__ == "__main__":
 	[x] Listen for tweets from @metis_ai
 	[x] Extract symbol and price
 	[x] Buy symbol at market price and sell for profit specified in config
-	[ ] Test market buy
+	[x] Test market buy
 	"""
 	
 	

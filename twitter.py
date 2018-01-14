@@ -15,8 +15,13 @@ class TwitterListener(StreamListener):
 		tweet_json = json.loads(data)
 		try: 
 			if tweet_json["user"]["id_str"] in Config.follow_ids:
-				link = f'https://twitter.com/{screen_name}/status/{id}'
+				# Link
+				screen_name = tweet_json["user"]["screen_name"]
+				tweet_id = tweet_json["id_str"]
+				link = f'https://twitter.com/{screen_name}/status/{tweet_id}'
 				Logger.log(link)
+				
+				# Callback
 				self.callback(tweet_json["text"])
 		except:
 			pass

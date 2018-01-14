@@ -2,6 +2,7 @@ import os
 
 class Config:
 	follow_ids = ["914663684928139264"] # @metis_ai
+	# follow_ids = ["944717267304108032"] # @mcafee2cash
 
 	# Spend a fraction of BTC balance per signal (default 10%)
 	try:
