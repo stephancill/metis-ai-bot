@@ -31,6 +31,8 @@ class Main:
 			Logger.log(f'New signal: {symbol}')
 			if symbol in self.symbols:
 				self.buy_and_sell(symbol)
+			else:
+				Logger.log(f'Not supported')
 		
 	def buy_and_sell(self, symbol):
 		try:
